@@ -9,7 +9,7 @@ import Home from './src/components/Home';
 
 const Stack = createStackNavigator();
 
-function MyStack() {
+const MyStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="Signup"
@@ -47,10 +47,13 @@ function MyStack() {
     </Stack.Navigator>
   );
 }
-export default function App() {
+
+const App = () => {
   return (
     <NavigationContainer>
       <MyStack />
     </NavigationContainer>
   );
 }
+
+export default App;
