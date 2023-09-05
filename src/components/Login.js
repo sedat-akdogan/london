@@ -63,7 +63,7 @@ const Login = ({ navigation }) => {
         onPress={() => userLogin()}
       />
       <Text style={styles.loginText} onPress={() => navigation.navigate('Register')}>
-        Don't have an account? Click here to register
+        Don't have an account? Click here to Register
       </Text>
     </View>
   );
@@ -81,11 +81,12 @@ const styles = StyleSheet.create({
   inputStyle: {
     width: '100%',
     marginBottom: 15,
-    paddingBottom: 15,
+    padding: 15,
     alignSelf: 'center',
-    borderColor: '#ccc',
-    borderBottomWidth: 1,
-  },
+    borderColor: '#3740FE',
+    borderWidth: 2,
+    borderRadius: 10, 
+},
   loginText: {
     color: '#3740FE',
     marginTop: 25,
